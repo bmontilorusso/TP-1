@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="menu_principal marco">
+        <h1>TRABAJO PRÁCTICO #1</h1>
+        <div class="botonera">
+            <button class="boton" onclick="ejecutarTarea1()">Tarea 1 (Un número)</button>
+            <button class="boton" onclick="ejecutarTarea2()">Tarea 2 (Triángulos)</button>
+            <button class="boton" onclick="ejecutarTarea3()">Tarea 3 (Tres números)</button>
+        </div>
+        <div id="popup" class="popup_estilo marco">
+            <div id="popup1" class="contenido_popup1">
+                <div>
+                    <span class="cerrar marco" onclick="cerrarPopUp()">&times;</span>                    
+                    <h3>Tarea 1</h3>                    
+                    <p>Validar si el número es igual, menor o mayor a cero.</p>
+                </div>
+                <div class="comandos_popup">
+                    <input class="input_estilo" type="number" id="inputTarea1" placeholder="Ingrese un número!">
+                    <button class="boton" onclick="evaluarNumeroTarea1()">Enviar y evaluar</button>
+                </div>    
+            </div>        
+    
+        </div>
+        <div id="respuesta" class="respuesta marco">            
+            <div class="contenido_respuesta">
+                <span class="cerrar marco" onclick="cerrarRespuesta()">&times;</span>
+                <h3>Respuesta</h3>
+                
+                <input id="inputRespuesta" class="input_estilo input_respuesta" type="text" placeholder="La respuesta saldrá aquí..." readonly>
+            </div>
+        </div> 
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Holly Molly Studios, 2024.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+    
+</body>
+</html>

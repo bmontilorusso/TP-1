@@ -1,0 +1,177 @@
+:root {
+    /* Colores: */
+    --negro: black;
+    --verde: #00FF00;
+    /* Tipografía: */
+    --retroPrincipal: "Courier New", monospace;
+}
+
+html {
+    background-color: var(--negro);
+    font-family: var(--retroPrincipal);
+    font-size: 62.5%; 
+    box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+span,
+p {
+    color: var(--verde);
+    margin: 0;
+}
+
+
+.menu_principal {
+    width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+
+}
+
+.boton {
+    border-style: solid;
+    border-color: var(--verde);
+    border-width: .5rem;
+    background-color: var(--negro);
+    color: var(--verde);
+    font-family: var(--retroPrincipal);
+    padding: 1.5rem;
+}
+
+.boton:hover{
+    background-color: var(--verde);
+    color: var(--negro);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.marco {
+    border-style: solid;
+    border-color: var(--verde);
+    border-width: .5rem;
+}
+
+.popup_estilo {
+    display: none;
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 2rem;    
+}
+
+.popup_estilo h3 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.popup_estilo p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.contenido_popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comandos_popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.input_estilo {
+    border-style: solid;
+    border-color: var(--verde);
+    border-width: .5rem;
+    background-color: var(--negro);
+    color: var(--verde);
+    font-family: var(--retroPrincipal);
+    padding: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.respuesta {
+    display: none;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.contenido_respuesta {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.respuesta h3 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input_respuesta {
+    width: 40rem;
+    color: var(--verde);
+}
+
+
+.footer {
+    width: 70rem;
+    margin: 0 auto;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
