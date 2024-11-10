@@ -27,12 +27,17 @@ function evaluarNumeroTarea1() {
     } else if (numeroTarea1 < 0) {
         console.log(`El número ingresado (${numeroTarea1}) es NEGATIVO.`);
         inputRespuesta.value = `El número ingresado (${numeroTarea1}) es NEGATIVO.`;
+    } else if (numeroTarea1 = " ") {
+        console.log("Debe ingresar un número!");
+        inputRespuesta.value = "Debe ingresar un número!";
     } else {
         console.log("El valor ingresado no es válido.");
         inputRespuesta.value = "El valor ingresado no es válido.";
     }
     document.getElementById("respuesta").style.display = "flex";
 }
+
+
 
 // Cerrar ventanas:
 
