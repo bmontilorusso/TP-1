@@ -25,6 +25,7 @@ span,
 p {
     color: var(--verde);
     margin: 0;
+    text-align: center;
 }
 
 
@@ -62,6 +63,7 @@ h1 {
     color: var(--verde);
     font-family: var(--retroPrincipal);
     padding: 1.5rem;
+    max-width: 50%;
 }
 
 .boton:hover{
@@ -102,6 +104,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .comandos_popup {
@@ -129,7 +132,21 @@ h1 {
     font-family: var(--retroPrincipal);
     padding: 1.5rem;
     font-weight: bold;
+    max-width: 60%;
     
+}
+
+.contenido_popup2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs_tarea2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 .respuesta {

@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="menu_principal marco">
+        <!-- Manú Principal -->
         <h1>TRABAJO PRÁCTICO #1</h1>
         <div class="botonera">
             <button class="boton" onclick="ejecutarTarea1()">Tarea 1 (Un número)</button>
             <button class="boton" onclick="ejecutarTarea2()">Tarea 2 (Triángulos)</button>
             <button class="boton" onclick="ejecutarTarea3()">Tarea 3 (Tres números)</button>
         </div>
+        <!-- PopUp Tarea 1 -->
         <div id="popup" class="popup_estilo marco">
             <div id="popup1" class="contenido_popup1">
                 <div>
@@ -25,22 +27,39 @@
                     <input class="input_estilo" type="number" id="inputTarea1" placeholder="Ingrese un número!">
                     <button class="boton" onclick="evaluarNumeroTarea1()">Enviar y evaluar</button>
                 </div>    
-            </div>        
-    
+            </div>
         </div>
+
+        <!-- PopUp Tarea 2 -->
+        <div id="popup2" class="popup_estilo marco">
+            <div class="contenido_popup2">
+                <span class="cerrar marco" onclick="cerrarPopUp2()">&times;</span>
+                <h3>Tarea 2</h3>
+                <p>Determinar qué tipo de Triángulo es!</p>            
+                <div class="inputs_tarea2">
+                    <input class="input_estilo" type="number" placeholder="Longitud lado 1" id="lado1">
+                    <input class="input_estilo" type="number" placeholder="Longitud lado 2" id="lado2">
+                    <input class="input_estilo" type="number" placeholder="Longitud lado 3" id="lado3">
+                    <button class="boton" onclick="evaluarNumeroTarea2()">Enviar y evaluar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PopUp Respuesta -->
         <div id="respuesta" class="respuesta marco">            
             <div class="contenido_respuesta">
                 <span class="cerrar marco" onclick="cerrarRespuesta()">&times;</span>
-                <h3>Respuesta</h3>
-                
-                <input id="inputRespuesta" class="input_estilo input_respuesta" type="text" placeholder="La respuesta saldrá aquí..." readonly>
+                <h3>Respuesta</h3>                
+                <textarea class="input_estilo input_respuesta" name="" id="inputRespuesta" placeholder="La respuesta saldrá aquí..."></textarea>
             </div>
         </div> 
     </div>
+    <!-- Footer -->
     <footer class="footer">
         <p>Todos los derechos reservados. Holly Molly Studios, 2024.</p>
     </footer>
 
+    <!-- Link del Script -->
     <script src="JS/script.js"></script>
     
 </body>
