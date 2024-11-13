@@ -80,6 +80,10 @@ function evaluarNumeroTarea2() {
 
 }
 
+// Tarea 3:
+
+
+
 // Cerrar ventanas:
 
 function cerrarPopUp(){
