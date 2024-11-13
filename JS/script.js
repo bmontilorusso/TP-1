@@ -9,7 +9,7 @@ let numeroTarea1;
 function ejecutarTarea1(){
     document.getElementById("popup").style.display = "flex";
     document.getElementById("popup2").style.display = "none";
-    // ocultar popup 3
+    document.getElementById("popup3").style.display = "none";
     document.getElementById("inputTarea1").value = "";
 }
 
@@ -47,6 +47,7 @@ let lado3;
 function ejecutarTarea2(){
     document.getElementById("popup").style.display = "none";
     document.getElementById("popup2").style.display = "flex";
+    document.getElementById("popup3").style.display = "none";
     document.getElementById("lado1").value = "";
     document.getElementById("lado2").value = "";
     document.getElementById("lado3").value = "";
@@ -82,14 +83,32 @@ function evaluarNumeroTarea2() {
 
 // Tarea 3:
 
+let num1;
+let num2;
+let num3;
 
+function ejecutarTarea3() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup2").style.display = "none";
+    document.getElementById("popup3").style.display = "flex";
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
+    document.getElementById("num3").value = "";
+    document.getElementById("inputRespuesta").value = "";
+}
+
+function evaluarNumeroTarea3() {
+    
+
+    document.getElementById("respuesta").style.display = "flex";
+
+}
 
 // Cerrar ventanas:
 
 function cerrarPopUp(){
     document.getElementById("popup").style.display = "none";
-    document.getElementById("respuesta").style.display = "none";
-    inputRespuesta.value = "";
+    cerrarRespuesta();
 
 }
 
@@ -98,6 +117,10 @@ function cerrarPopUp2(){
     cerrarRespuesta();
 }
 
+function cerrarPopUp3(){
+    document.getElementById("popup3").style.display = "none";
+    cerrarRespuesta();
+}
 
 
 function cerrarRespuesta(){
