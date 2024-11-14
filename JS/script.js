@@ -115,6 +115,8 @@ function evaluarNumeroTarea3() {
         inputRespuesta.value = `Hay empate. El #2 y el #3 son iguales (${evaluacionMax}).`;
     } else if (num1 == num3 && num3 > num2) {
         inputRespuesta.value = `Hay empate. El #1 y el #3 son iguales (${evaluacionMax}).`;
+    } else if (num1 == "" || num2 == "" || num3 == "") { 
+        inputRespuesta.value = `Algo no anda bien. Debe completar los 3 campos!`;
     } else {
         inputRespuesta.value = `El número más grande es: ${evaluacionMax}`;
     }
