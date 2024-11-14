@@ -107,7 +107,7 @@ function evaluarNumeroTarea3() {
     console.log(`Éxito al guardar los 3 números: ${num1}, ${num2}, ${num3}.`);
     // Evaluar los números:
     evaluacionMax = Math.max(num1, num2, num3);
-    if (num1 == num2 && num2 == num3) {
+   if (num1 == num2 && num2 == num3) {
         inputRespuesta.value = `Hay empate. Los 3 números son iguales! (${evaluacionMax}).`;
     } else if (num1 == num2 && num2 > num3) {
         inputRespuesta.value = `Hay empate. El #1 y el #2 son iguales (${evaluacionMax}).`;
@@ -115,13 +115,12 @@ function evaluarNumeroTarea3() {
         inputRespuesta.value = `Hay empate. El #2 y el #3 son iguales (${evaluacionMax}).`;
     } else if (num1 == num3 && num3 > num2) {
         inputRespuesta.value = `Hay empate. El #1 y el #3 son iguales (${evaluacionMax}).`;
-    } else if (num1 == "" || num2 == "" || num3 == "") { 
-        inputRespuesta.value = `Algo no anda bien. Debe completar los 3 campos!`;
-    } else {
+    } else if (num1 != num2 && num2 != num3 && num1 != num3) {
         inputRespuesta.value = `El número más grande es: ${evaluacionMax}`;
-    }
+    } else {
+        inputRespuesta.value = `Algo no anda bien. Debe completar los 3 campos!`;
+    } 
     document.getElementById("respuesta").style.display = "flex";
-
 }
 
 // Cerrar ventanas:
